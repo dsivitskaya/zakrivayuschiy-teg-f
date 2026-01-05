@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-  </head>
-  <body class="page">
-    <header class="header"></header>
-    <main></main>
-    <script src="./scripts/like.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./favicon/favicon.ico" sizes="any" />
+  <link rel="icon" href="./favicon/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./favicon/apple-touch-icon.png" />
+  <title>Закрывающий тег</title>
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./styles/globals.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/animations.css" />
+</head>
+
+<body class="page">
+
+  <header class="header responsive-width">
+    <a href="" class="logo">
+      <span class="logo__text">&lt;HTML&gt;</span>
+    </a>
+    <h1 class="header__title"> Закрывающий тег</h1>
+  </header>
+  <main class="main responsive-width">
+    <ul class="content__list">
+      <li class="content__item">
+        <article class="content__card card ">
+          <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+          <picture class="card__image">
+            <source type="image/avif" srcset="./images/car.avif" />
+            <source type="image/webp" srcset="./images/car.webp" />
+            <img src="./images/car.jpg" alt="Дом на колесах" loading="lazy" />
+          </picture>
+          <div class="card__description">
+            <p class="card__description-text">Это было самое начало пути. На этом этапе важно было проникнуться основами
+              и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+            </p>
+            <p class="card__description-text">
+              Место для ваших воспоминаний о начале обучения.</p>
+          <button class="card__button">Like</button>
+        </div>
+          
+        </article>
+      </li>
+    </ul>
+
+  </main>
+
+
+
+  <button class="button">
+    <svg viewBox="0 0 39 39">
+      <use href="./svg/floppy.svg#floppy"></use>
+    </svg>
+  </button>
+
+
+
+  <script src="./scripts/like.js"></script>
+</body>
+
 </html>
