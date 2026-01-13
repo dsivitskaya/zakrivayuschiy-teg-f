@@ -1,7 +1,8 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
   --font-main: 'Inter-Variable', sans-serif;
-  --font-accent: 'PressStart2P', monospace;
+  --font-accent: 'PressStart2P', fantasy;
+
   --wght-text: 410;
   --wght-title: 715;
   --background-gradient: repeating-linear-gradient(to right,
@@ -13,12 +14,13 @@
     linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
 
   --responsive-width: clamp(375px, 50vw, 700px);
-  --stroke-color: rgba(255, 255, 255, 0.5);
+  --stroke-color: #fff;
+  --border-color: #000;
 
   --bg-color: #fff;
   --hover-bg-color: #000;
   --text-color: #000;
-  --accent-text-color: #fff;
+  --hover-text-color: #fff;
 
   --contour-color: #000;
   --main-body-color: #000;
